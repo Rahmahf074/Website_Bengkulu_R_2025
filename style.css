@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 2;
+}
+
+header {
+  background: linear-gradient(to right, #00bcd4, #4caf50, #ffc107);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+header h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 58px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 5px rgb(248, 246, 246);
+}
+
+header p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-style: italic;
+  color: #666;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+header nav {
+  background: linear-gradient(to right, #336666, #2e6b2f, #6e5525);
+  padding: 10px 40px;
+  position: sticky;
+  z-index: 10;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav li {
+  flex-shrink: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: monospace;
+  transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+  opacity: 0.7;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.konten {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+  max-width: 1650px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.konten-artikel {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+.konten-artikel article {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+  width: 300px;
+  background-color: #eaf4ff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+aside h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #2980b9;
+}
+
+aside ul li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+aside img {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+aside h4 {
+  margin-top: 20px;
+  color: #2c3e50;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+aside p {
+  text-align: center;
+}
+
+article h2 {
+  margin-bottom: 15px;
+  color: #005a9c;
+  padding-bottom: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+}
+
+article h3 {
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.artikel img,
+.tempat-wisata img,
+.tempat-kuliner img {
+  width: 1250px;
+  height: 400px;
+  border-radius: 8px;
+}
+
+.konten ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.konten li {
+  margin-bottom: 6px;
+  line-height: 2;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  background: linear-gradient(to right, #00bcd4, #4caf50, #ffc107);
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  header p {
+    font-size: 14px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  .konten {
+    margin: 20px 10px;
+    gap: 20px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  aside {
+    width: 150px;
+    margin-top: 10px;
+  }
+
+  .artikel img,
+  .tempat-wisata img,
+  .tempat-kuliner img {
+    width: 100%;
+    height: auto;
+  }
+
+  article h2 {
+    font-size: 20px;
+  }
+
+  article h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
